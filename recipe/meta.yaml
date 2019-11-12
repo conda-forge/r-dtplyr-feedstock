@@ -25,16 +25,21 @@ requirements:
     - {{posix}}zip               # [win]
   host:
     - r-base
+    - r-crayon
     - r-data.table >=1.9.6
-    - r-dplyr >=0.5.0
-    - r-lazyeval
+    - r-dplyr >=0.8.1
     - r-rlang
+    - r-tibble
+    - r-tidyselect
+    
   run:
     - r-base
+    - r-crayon
     - r-data.table >=1.9.6
-    - r-dplyr >=0.5.0
-    - r-lazyeval
+    - r-dplyr >=0.8.1
     - r-rlang
+    - r-tibble
+    - r-tidyselect
 
 test:
   commands:
