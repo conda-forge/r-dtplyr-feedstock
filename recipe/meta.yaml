@@ -52,7 +52,7 @@ about:
   summary: This implements the data table back-end for 'dplyr' so that you can seamlessly use
     data table and 'dplyr' together.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
