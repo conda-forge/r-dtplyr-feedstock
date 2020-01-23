@@ -26,7 +26,7 @@ requirements:
   host:
     - r-base
     - r-crayon
-    - r-data.table >=1.9.6
+    - r-data.table >=1.12.4
     - r-dplyr >=0.8.1
     - r-rlang
     - r-tibble
@@ -35,7 +35,7 @@ requirements:
   run:
     - r-base
     - r-crayon
-    - r-data.table >=1.9.6
+    - r-data.table >=1.12.4
     - r-dplyr >=0.8.1
     - r-rlang
     - r-tibble
