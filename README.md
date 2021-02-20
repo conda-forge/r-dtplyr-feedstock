@@ -5,11 +5,9 @@ Home: https://github.com/hadley/dtplyr
 
 Package license: GPL (>= 2)
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dtplyr-feedstock/blob/master/LICENSE.txt)
 
 Summary: This implements the data table back-end for 'dplyr' so that you can seamlessly use data table and 'dplyr' together.
-
-
 
 Current build status
 ====================

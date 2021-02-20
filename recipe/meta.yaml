@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dtplyr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dtplyr/dtplyr_{{ version }}.tar.gz
-  sha256: b716e0c02d7daac2032a10a6d6f0572e923850094a73cca134364875e9d3f149
+  sha256: 99681b7285d7d5086e5595ca6bbeebf7f4e2ee358a32b694cd9d35916cdfc732
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -31,7 +31,7 @@ requirements:
     - r-rlang
     - r-tibble
     - r-tidyselect
-    
+
   run:
     - r-base
     - r-crayon
@@ -49,10 +49,9 @@ test:
 about:
   home: https://github.com/hadley/dtplyr
   license: GPL (>= 2)
-  summary: This implements the data table back-end for 'dplyr' so that you can seamlessly use
-    data table and 'dplyr' together.
+  summary: This implements the data table back-end for 'dplyr' so that you can seamlessly use data table and 'dplyr' together.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
