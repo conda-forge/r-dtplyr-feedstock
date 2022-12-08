@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -26,20 +26,28 @@ requirements:
   host:
     - r-base
     - r-crayon
-    - r-data.table >=1.12.4
-    - r-dplyr >=0.8.1
+    - r-data.table >=1.13.0
+    - r-dplyr >=1.0.3
+    - r-ellipsis
+    - r-glue
+    - r-lifecycle
     - r-rlang
     - r-tibble
     - r-tidyselect
+    - r-vctrs
 
   run:
     - r-base
     - r-crayon
-    - r-data.table >=1.12.4
-    - r-dplyr >=0.8.1
+    - r-data.table >=1.13.0
+    - r-dplyr >=1.0.3
+    - r-ellipsis
+    - r-glue
+    - r-lifecycle
     - r-rlang
     - r-tibble
     - r-tidyselect
+    - r-vctrs
 
 test:
   commands:
@@ -48,10 +56,12 @@ test:
 
 about:
   home: https://github.com/hadley/dtplyr
-  license: GPL-2.0-or-later
+  license: MIT
   summary: This implements the data table back-end for 'dplyr' so that you can seamlessly use data table and 'dplyr' together.
-  license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  license_family: MIT
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
+    - LICENSE
 
 extra:
   recipe-maintainers:

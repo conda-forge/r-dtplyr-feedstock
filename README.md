@@ -3,7 +3,7 @@ About r-dtplyr
 
 Home: https://github.com/hadley/dtplyr
 
-Package license: GPL-2.0-or-later
+Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dtplyr-feedstock/blob/main/LICENSE.txt)
 
