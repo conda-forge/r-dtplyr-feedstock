@@ -1,4 +1,4 @@
-{% set version = "1.2.2" %}
+{% set version = "1.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dtplyr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dtplyr/dtplyr_{{ version }}.tar.gz
-  sha256: f85928fe63701bc3a0cadf705ba660834a2aaeab37cf20addab406430e53e2d4
+  sha256: 1bbcdda7e1708c2ca1e592e487affc54143ca24f86e28ae5e98b07de5cf680f8
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
