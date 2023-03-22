@@ -1,11 +1,11 @@
-About r-dtplyr
-==============
+About r-dtplyr-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dtplyr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hadley/dtplyr
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dtplyr-feedstock/blob/main/LICENSE.txt)
 
 Summary: This implements the data table back-end for 'dplyr' so that you can seamlessly use data table and 'dplyr' together.
 
